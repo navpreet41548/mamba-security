@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/site/AddSite.css";
 
 const AddSite = () => {
@@ -19,22 +19,9 @@ const AddSite = () => {
 
   const [siteInstruction, setSiteInstruction] = useState([]);
 
-  const [clients, setClients] = useState([
-    { _id: "1213", clientName: "Client 1" },
-    { _id: "1214", clientName: "Client 2" },
-    { _id: "1215", clientName: "Client 3" },
-    { _id: "1216", clientName: "Client 4" },
-  ]);
+  const [clients, setClients] = useState();
 
-  const [guards, setGuards] = useState([
-    { guardName: "Guard 1", _id: "1234" },
-    { guardName: "Guard 2", _id: "5678" },
-    { guardName: "Guard 3", _id: "9101" },
-    { guardName: "Guard 5", _id: "1121" },
-    { guardName: "Guard 6", _id: "3141" },
-    { guardName: "Guard 7", _id: "5161" },
-    { guardName: "Guard 8", _id: "7181" },
-  ]);
+  const [guards, setGuards] = useState();
 
   const [selectedGuards, setSelectedGuards] = useState([]);
 
@@ -72,6 +59,25 @@ const AddSite = () => {
       return oldValues.filter((selectedGuards) => selectedGuards !== obj);
     });
   };
+
+  useEffect(() => {
+    setClients([
+      { _id: "1213", clientName: "Client 1" },
+      { _id: "1214", clientName: "Client 2" },
+      { _id: "1215", clientName: "Client 3" },
+      { _id: "1216", clientName: "Client 4" },
+    ]);
+
+    setGuards([
+      { guardName: "Guard 1", _id: "1234" },
+      { guardName: "Guard 2", _id: "5678" },
+      { guardName: "Guard 3", _id: "9101" },
+      { guardName: "Guard 5", _id: "1121" },
+      { guardName: "Guard 6", _id: "3141" },
+      { guardName: "Guard 7", _id: "5161" },
+      { guardName: "Guard 8", _id: "7181" },
+    ]);
+  }, []);
 
   return (
     <>

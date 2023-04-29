@@ -5,7 +5,7 @@ import ManageClients from "./pages/client/ManageClients";
 import Login from "./pages/auth/Login";
 import { store } from "./store/store";
 import { Provider } from "react-redux";
-import AdminProtected from "./utils/AdminProtected";
+// import AdminProtected from "./utils/AdminProtected";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import ManageSites from "./pages/site/ManageSites";
 import AddSite from "./pages/site/AddSite";
