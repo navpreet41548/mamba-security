@@ -1,0 +1,74 @@
+.formWrapper1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formWrapper1 .formContainer {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.formWrapper2 {
+  display: flex;
+  justify-content: center;
+  width: 700px;
+  margin: auto;
+  align-items: center;
+  margin-top: 30px;
+  flex-direction: column;
+}
+
+.formWrapper2 .formContainer {
+  background-color: white;
+  width: 100%;
+}
+
+.toggleWrapper {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.checkbox {
+  text-align: left;
+  padding-left: 0 !important;
+  width: fit-content;
+  margin-right: 30px;
+}
+
+.checkboxInput {
+  margin-left: 0 !important;
+  cursor: pointer;
+}
+
+.buttonContainer {
+  width: 100%;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .formWrapper1 {
+    flex-direction: column;
+  }
+  .formWrapper1 .formContainer {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .formWrapper2 {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .formWrapper2 .formContainer {
+    background: none;
+  }
+  .input {
+    background: none;
+  }
+  ::placeholder {
+    color: rgb(219, 219, 219);
+  }
+}

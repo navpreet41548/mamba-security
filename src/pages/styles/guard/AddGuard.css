@@ -1,0 +1,24 @@
+.checkbox {
+  width: 100%;
+  margin-right: 0;
+}
+
+.subInputWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subInput {
+  width: 29%;
+}
+
+.subInputIcon {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subInputIcon i {
+  font-size: 25px;
+}

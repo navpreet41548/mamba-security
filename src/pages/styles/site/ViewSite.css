@@ -1,0 +1,295 @@
+.form1 {
+  background-color: white;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 20px 20px;
+}
+
+.formHeading {
+  font-size: 18px;
+  width: fit-content;
+}
+
+.formHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.siteName {
+  color: #959595;
+  font-size: 20px;
+}
+
+.subHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.formSubHeading {
+  font-size: 20px;
+  color: #e80000;
+}
+
+.formButton {
+  text-decoration: none;
+  color: #e80000;
+  border: 1px solid #e80000;
+  padding: 3px 10px;
+  border-radius: 5px;
+  display: block;
+}
+
+.formButton:hover {
+  color: #e80000;
+}
+
+.instructionListContainer {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.instructionList {
+  display: flex;
+  /* justify-content: space-between; */
+  width: 100%;
+  margin: 10px 0;
+  position: relative;
+}
+.instructionListPart1 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.instructionListPart1 i {
+  font-size: 12px;
+  margin-right: 10px;
+  color: #959595;
+}
+
+.instructionListText {
+  margin-bottom: 0;
+  color: #959595;
+}
+
+.instructionListPart2 {
+  position: absolute;
+  right: 0;
+}
+
+.instructionListPart2 i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.jobDutiesListContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.jobDutiesList {
+  width: 100%;
+  display: flex;
+  /* justify-content: space-between; */
+  margin: 20px 0;
+  position: relative;
+}
+
+.jobDutiesListText {
+  width: fit-content;
+  margin-bottom: 0;
+  text-align: left;
+  font-size: 14px;
+  line-height: 20px;
+  color: #6b6b6b;
+  font-weight: 500;
+}
+
+.jobDutiesListPart1 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.jobDutiesListPart1 i {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #0ad30a;
+}
+.jobDutiesListPart2 {
+  position: absolute;
+  right: 0;
+}
+.jobDutiesListPart2 i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.big {
+  font-size: 17px;
+  display: block;
+  color: black;
+  font-weight: 400;
+}
+
+.dateSelect {
+  color: #e80000;
+  border: 1px solid #e80000;
+  border-radius: 5px;
+  padding: 3px 10px;
+}
+
+.shiftListContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.shiftList {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px;
+  align-items: center;
+  position: relative;
+}
+
+.shiftListPart1 {
+  display: flex;
+  width: 100%;
+}
+.shiftListPart2 {
+  position: absolute;
+  right: 0;
+}
+.shiftListPart2 i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.shiftListText {
+  width: 25%;
+  text-align: left;
+  margin-bottom: 0;
+  font-weight: 500;
+  color: #6b6b6b;
+}
+
+.timeDiff {
+  display: block;
+  color: black;
+}
+
+.shiftList:nth-child(odd) {
+  background-color: rgb(250, 250, 250);
+}
+
+@media screen and (max-width: 1400px) {
+  .form1 {
+    width: 70%;
+  }
+  .formHeading {
+    font-size: 16px;
+  }
+
+  .siteName {
+    font-size: 15px;
+  }
+  .formSubHeading {
+    font-size: 15px;
+  }
+  .formButton {
+    font-size: 11px;
+    padding: 4px 6px;
+  }
+  .instructionList {
+    margin: 5px 0;
+  }
+
+  .instructionListContainer {
+    margin-top: 10px;
+  }
+
+  .instructionListText {
+    font-size: 14px;
+  }
+  .jobDutiesListContainer {
+    margin-top: 10px;
+  }
+  .jobDutiesList {
+    margin: 5px 0;
+  }
+  .jobDutiesListText {
+    font-size: 12px;
+    padding-right: 20px;
+  }
+  .big {
+    font-size: 15px;
+  }
+  .dateSelect {
+    padding: 4px 10px;
+    font-size: 13px;
+  }
+  .shiftListText {
+    font-size: 14px;
+  }
+
+  .timeDiff {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .form1 {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .form1 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .formSubHeading {
+    font-size: 13px;
+  }
+  .formButton {
+    font-size: 10px;
+    padding: 3px 4px;
+  }
+  .instructionListText {
+    font-size: 13px;
+  }
+  .instructionListPart1 i {
+    font-size: 6px;
+  }
+  .big {
+    font-size: 13px;
+  }
+  .jobDutiesListPart1 i {
+    margin-right: 5px;
+    font-size: 16px;
+  }
+  .siteName {
+    font-size: 11px;
+  }
+  .dateSelect {
+    padding: 2px 5px;
+    font-size: 11px;
+  }
+
+  .shiftListText {
+    font-size: 11px;
+
+    width: 30%;
+  }
+
+  .timeDiff {
+    font-size: 11px;
+  }
+  .jobDutiesListText {
+    font-size: 10px;
+  }
+}

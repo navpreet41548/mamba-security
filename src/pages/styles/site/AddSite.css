@@ -1,0 +1,173 @@
+.formWrapper {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.formHeading {
+  width: 100%;
+  text-align: left;
+  font-size: 23px;
+  color: #959595;
+}
+
+.inputWrapper {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.inputLabel {
+  width: fit-content;
+  font-size: 15px;
+  color: #959595;
+  margin-bottom: 3px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid #cfcfcf;
+  outline: none;
+}
+
+.textarea {
+  height: 100px;
+  resize: none;
+}
+
+.select {
+  color: #959595;
+  cursor: pointer;
+}
+
+.listContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e2e2e2;
+  margin-top: 5px;
+}
+
+.listName {
+  font-size: 15px;
+}
+
+.listAction {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.checkbox {
+  text-align: left;
+  padding-left: 0 !important;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.checkboxInput {
+  margin-left: 0 !important;
+  cursor: pointer;
+}
+
+.buttonContainer {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.button {
+  width: 30%;
+  margin: 0 10px;
+  padding: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.buttonPrimary {
+  background-color: #e80000;
+  color: white;
+}
+
+.buttonSecondary {
+  background-color: #252525;
+  color: white;
+}
+
+.action i {
+  color: rgb(100, 100, 100);
+}
+
+@media screen and (max-width: 1500px) {
+  .formHeading {
+    font-size: 17px;
+  }
+  .inputLabel {
+    font-size: 13px;
+  }
+  .inputWrapper {
+    margin-top: 10px;
+  }
+  .input {
+    padding: 7px 10px;
+    font-size: 14px;
+  }
+  .guardName {
+    font-size: 13px;
+  }
+  .guardAction {
+    font-size: 13px;
+  }
+  .button {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .formWrapper {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .formWrapper {
+    width: 100%;
+  }
+  .formContainer {
+    padding: 20px 8px;
+    background: none;
+  }
+
+  .formHeading {
+    color: white;
+  }
+  .inputLabel {
+    color: white;
+  }
+  .guardName {
+    color: white;
+  }
+
+  .guardAction {
+    color: white;
+  }
+  .button {
+    width: 40%;
+  }
+}
