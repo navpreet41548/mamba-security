@@ -56,6 +56,7 @@ const AddClient = () => {
 
   const handelSwitch = (e) => {
     setSwitchValue({ ...switchValue, [e.target.name]: e.target.checked });
+    console.log("added");
   };
 
   return (
