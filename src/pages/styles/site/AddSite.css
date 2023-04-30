@@ -170,4 +170,13 @@
   .button {
     width: 40%;
   }
+  .select {
+    color: white;
+  }
+  .listName {
+    color: white;
+  }
+  .action i {
+    color: white;
+  }
 }

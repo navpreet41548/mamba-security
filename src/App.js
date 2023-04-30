@@ -14,10 +14,13 @@ import ManageGuard from "./pages/guard/ManageGuard";
 import AddGuard from "./pages/guard/AddGuard";
 import ViewSite from "./pages/site/ViewSite";
 import ViewGuard from "./pages/guard/ViewGuard";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
     <Provider store={store}>
+      <ToastContainer />
       <BrowserRouter>
         <Layout>
           <div className="App">

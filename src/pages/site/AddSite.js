@@ -122,9 +122,10 @@ const AddSite = () => {
           <div className={"inputWrapper"}>
             <h1 className="inputLabel">Client</h1>
             <select className="input select" placeholder="Select Client">
-              {clients.map((client, i) => (
-                <option value={client._id}>{client.clientName}</option>
-              ))}
+              {clients &&
+                clients.map((client, i) => (
+                  <option value={client._id}>{client.clientName}</option>
+                ))}
             </select>
           </div>
           <div className={"inputWrapper"}>
@@ -134,15 +135,16 @@ const AddSite = () => {
               className="input select"
               placeholder="Select Guard"
             >
-              {guards.map((guard, i) => (
-                <option
-                  key={i}
-                  value={`${guard.guardName}, ${guard._id}`}
-                  data-guardName={guard.guardName}
-                >
-                  {guard.guardName}
-                </option>
-              ))}
+              {guards &&
+                guards.map((guard, i) => (
+                  <option
+                    key={i}
+                    value={`${guard.guardName}, ${guard._id}`}
+                    data-guardName={guard.guardName}
+                  >
+                    {guard.guardName}
+                  </option>
+                ))}
             </select>
           </div>
           <div className="listContainer">

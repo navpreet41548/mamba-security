@@ -9,7 +9,7 @@
 }
 
 .subInput {
-  width: 29%;
+  width: 100%;
 }
 
 .subInputIcon {
@@ -17,8 +17,59 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .subInputIcon i {
   font-size: 25px;
+}
+
+.inputLabelContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  width: 29%;
+}
+
+.inputLabelContainer label {
+  width: fit-content;
+  color: grey;
+}
+
+.licenseListName {
+  width: 29%;
+  text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  .subInputIcon i {
+    color: white;
+  }
+  .inputLabelContainer label {
+    color: white;
+  }
+  .subInput {
+    color: white;
+  }
+  .licenseListName {
+    font-weight: 400;
+  }
+}
+@media screen and (max-width: 500px) {
+  .inputLabelContainer {
+    width: 27%;
+  }
+  .inputLabelContainer label {
+    font-size: 10px;
+  }
+  .subInput {
+    font-size: 10px;
+  }
+  .licenseListName {
+    font-size: 12px;
+  }
+  .subInputIcon {
+    width: 7%;
+  }
 }

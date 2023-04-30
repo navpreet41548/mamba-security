@@ -14,6 +14,11 @@ const Layout = ({ children }) => {
     const container = document.getElementsByClassName("container")[0];
     container.classList.toggle("containerFull");
   };
+
+  const removeBurgerClass = () => {
+    const container = document.getElementsByClassName("container")[0];
+    container.classList.remove("containerFull");
+  };
   return (
     <>
       <div className="container p-0 ">
@@ -34,11 +39,11 @@ const Layout = ({ children }) => {
             <i class="bx bx-chevron-right arrow"></i>
           </div>
           <div className={"subBlock"}>
-            <Link className="link" to="/">
+            <Link onClick={removeBurgerClass} className="link" to="/">
               <i class="bx bx-circle circle"></i>
               <h3 className={"blockText"}>Manage Client</h3>
             </Link>
-            <Link className="link" to="/postSite">
+            <Link onClick={removeBurgerClass} className="link" to="/postSite">
               <i class="bx bx-circle circle"></i>
               <h3 className={"blockText"}>Post Sites</h3>
             </Link>
@@ -49,11 +54,11 @@ const Layout = ({ children }) => {
             <i class="bx bx-chevron-right arrow"></i>
           </div>
           <div className={"subBlock"}>
-            <Link className="link" to="/guards">
+            <Link onClick={removeBurgerClass} className="link" to="/guards">
               <i class="bx bx-circle circle"></i>
               <h3 className={"blockText"}>Security Guards</h3>
             </Link>
-            <Link className="link" to="/">
+            <Link onClick={removeBurgerClass} className="link" to="/">
               <i class="bx bx-circle circle"></i>
               <h3 className={"blockText"}>Back Office Team</h3>
             </Link>
